@@ -58,20 +58,13 @@
       path: '{{ component.canonical_project_name }}.tar'
 
 
-  - name: Remove tar ball
+  - name: Clean up
     file:
       state: absent
-      path: '{{ component.canonical_project_name }}.tar'
-
-
-  - name: Remove repo file
-    file:
-      state: absent
-      path: '{{ component.canonical_project_name }}.repo'
-
-  - name: Remove synced directory
-    file:
-      state: absent
-      path: '{{ component.canonical_project_name }}'
+      path: '{{ item }}'
+    with_items:
+      - '{{ component.canonical_project_name }}.tar'
+      - '{{ component.canonical_project_name }}.repo'
+      - '{{ component.canonical_project_name }}'
 
   when: create.changed
