@@ -54,7 +54,7 @@
 
   - name: Upload the component to the DCI control-server
     dci_component:
-      id: '{{ create.results[0].component.id }}'
+      id: '{{ create.component.id }}'
       path: '{{ component.canonical_project_name }}.tar'
 
 
