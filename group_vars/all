@@ -1,11 +1,11 @@
 ---
 components:
   - name: RDO-Ocata
-    topic: 'RDO-Ocata'
+    topic: RDO-Ocata
     type: snapshot_rdo
     url: http://buildlogs.centos.org/centos/7/cloud/x86_64/rdo-trunk-master-tested/delorean.repo
 
   - name: RDO-Newton
-    topic: 'RDO-Newton'
+    topic: RDO-Newton
     type: snapshot_rdo
     url: http://buildlogs.centos.org/centos/7/cloud/x86_64/rdo-trunk-newton-tested/delorean.repo
