@@ -18,7 +18,7 @@
     name: '{{ component.name }}'
     type: '{{ component_to_upload.type }}'
     canonical_project_name: '{{ component.canonical_project_name }}'
-    component_url: '{{ component.url }}'
+    url: '{{ component.url }}'
     data: '{{ component.data }}'
     topic_id: '{{ topic.topic.id }}'
   register: create
