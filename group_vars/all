@@ -1,9 +1,14 @@
 ---
 components:
+  - name: RDO-Pike
+    topic: RDO-Pike
+    type: snapshot_rdo
+    url: http://trunk.rdoproject.org/centos7/current-passed-ci/delorean.repo
+
   - name: RDO-Ocata
     topic: RDO-Ocata
     type: snapshot_rdo
-    url: http://trunk.rdoproject.org/centos7/current-passed-ci/delorean.repo
+    url: http://trunk.rdoproject.org/centos7-ocata/current-passed-ci/delorean.repo
 
   - name: RDO-Newton
     topic: RDO-Newton
