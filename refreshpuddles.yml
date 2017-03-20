@@ -20,7 +20,7 @@
     canonical_project_name: '{{ component.canonical_project_name }}'
     url: '{{ component.url }}'
     data: '{{ component.data }}'
-    topic_id: '{{ topic.topic.id }}'
+    topic_id: '{{ topic.id }}'
   register: create
 
 
@@ -54,7 +54,7 @@
 
   - name: Upload the component to the DCI control-server
     dci_component:
-      id: '{{ create.component.id }}'
+      id: '{{ create.id }}'
       path: '{{ component.canonical_project_name }}.tar'
 
 
